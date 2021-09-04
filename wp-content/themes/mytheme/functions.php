@@ -10,15 +10,7 @@
 
     //We will use init hook (Fronend + Backend Load Event)
 
-    add_action( 'init', function(){
-        $args = array(
-            'public'    => true,
-            'label'     => __( 'Books', 'textdomain' ),
-            'menu_icon' => 'dashicons-book',
-        );
-
-        register_post_type( 'book', $args );
-    } );
+    
 
     //add_meta_box( string $id, string $title, callable $callback, string|array|WP_Screen $screen = null, string $context = 'advanced', string $priority = 'default', array $callback_args = null )
 
